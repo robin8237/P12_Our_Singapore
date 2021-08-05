@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvAddName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Name" />
+
+    <EditText
+        android:id="@+id/etAddName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences" />
+
+    <TextView
+        android:id="@+id/tvAddDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Desc" />
+
+    <EditText
+        android:id="@+id/etAddDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences" />
+
+    <TextView
+        android:id="@+id/tvAddArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Area" />
+
+    <EditText
+        android:id="@+id/etAddArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tvAddStar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/star" />
+
+    <RatingBar
+        android:id="@+id/ratingBarAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"/>
+
+</LinearLayout>
