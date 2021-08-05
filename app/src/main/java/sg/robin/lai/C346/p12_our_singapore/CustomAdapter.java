@@ -45,7 +45,7 @@ public class CustomAdapter extends ArrayAdapter {
 
         // Set values to the TextView to display the corresponding information
         tvName.setText(currentVersion.getName());
-        tvArea.setText(currentVersion.getArea()+"");
+        tvArea.setText(currentVersion.getArea()+" km²");
         tvDescription.setText(currentVersion.getDescription());
         rb.setRating(currentVersion.getStar());
         return rowView;

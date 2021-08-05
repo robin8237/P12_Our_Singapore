@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -121,9 +122,12 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
 
                         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                        View viewDialog = inflater.inflate(R.layout.activity_edit,null);
+                        View viewDialog = inflater.inflate(R.layout.delete,null);
+                        final TextView tvConfirmIsland = viewDialog.findViewById(R.id.textViewIsland);
                         AlertDialog.Builder myBuilder = new AlertDialog.Builder(MainActivity.this);
-                        myBuilder.setTitle("Are You Sure You Want To Delete?");
+                        myBuilder.setView(viewDialog);
+                        myBuilder.setTitle("Danger");
+                        tvConfirmIsland.setText(data.getName());
                         myBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

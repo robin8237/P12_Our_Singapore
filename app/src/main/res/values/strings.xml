@@ -3,9 +3,10 @@
     <string name="add">Insert An Island</string>
     <string name="S5S">Show Islands With 5 Stars</string>
     <string name="Sall">Show All Islands</string>
-    <string name="Name">Name</string>
-    <string name="Desc">Description</string>
-    <string name="Area">Area</string>
+    <string name="Name">Enter Name</string>
+    <string name="Desc">Enter Description</string>
+    <string name="Area">Enter Area of Island</string>
     <string name="star">Star Rating</string>
     <string name="ID">ID</string>
+    <string name="confirm">Are you sure you want to delete the island</string>
 </resources>
